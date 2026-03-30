@@ -38,19 +38,6 @@ npx playwright test --debug
 
 ---
 
-## 📖 Suggested Learning Path
-
-1. **Start here:** `01-basics.spec.js` - Learn how Playwright works
-2. **Then:** `02-forms.spec.js` - Interact with forms
-3. **Then:** `03-assertions.spec.js` - Verify your tests work correctly
-4. **Then:** `04-waiting.spec.js` - Handle real-world delays
-5. **Then:** `05-advanced.spec.js` - Use advanced features when needed
-6. **Finally:** `06-best-practices.spec.js` - Write professional tests
-
----
-
-## 💡 Key Playwright Concepts
-
 ### Locators (Finding Elements)
 
 ```javascript
@@ -125,43 +112,3 @@ expect(page.url()).toBe('https://example.com')
 
 ---
 
-## 🎓 Tips for Learning
-
-1. **Run each test individually** - Try running one test at a time to understand it
-2. **Modify tests** - Change values, add new assertions, test different sites
-3. **Use `--headed` mode** - See what the browser is actually doing
-4. **Read the output** - Playwright gives clear error messages about what failed
-5. **Check screenshots** - Tests create screenshots that help debugging
-6. **Start simple** - Add complexity gradually as you understand concepts
-
----
-
-## ⚠️ Important Notes
-
-- Tests in this file use public demo websites (example.com, demoqa.com)
-- Some tests might fail if websites change
-- Use `--headed` mode to see what's actually happening
-- Read test comments carefully - they explain each concept
-
----
-
-## 📚 Additional Resources
-
-- [Playwright Documentation](https://playwright.dev)
-- [Locator Best Practices](https://playwright.dev/docs/locators)
-- [API Reference](https://playwright.dev/docs/api/class-page)
-- [Debugging Guide](https://playwright.dev/docs/debug)
-
----
-
-## ✅ What You'll Learn
-
-By studying these files, you'll understand:
-- How to automate browser interactions
-- How to find and interact with web elements
-- How to write reliable and maintainable tests
-- How to handle real-world scenarios (waiting, navigation, forms)
-- Best practices for test automation
-- Debugging techniques for failing tests
-
-Happy learning! 🎉
