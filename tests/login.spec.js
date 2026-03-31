@@ -10,10 +10,10 @@ test.describe("Login", () => {
     await page.goto("https://www.saucedemo.com/");
     await expect(page).toHaveTitle("Swag Labs");
 
-    /* await page.locator("[data-test='username']").click()
-    await page.locator("[data-test='username']").type("standard_");
-    await page.locator("[data-test='username']").type("standard_user");
-    await page.locator("[data-test='password']").type("secret_sauce");
-    await page.locator("[data-test='login-button']").click() */
+    await page.getByPlaceholder("Username").click();
+    await page.getByPlaceholder("Username").type("standard_user");
+    await page.getByPlaceholder("Password").type("secret_sauce");
+    await page.getByRole("button", { name: "Login" }).click();
+
   });
 });
